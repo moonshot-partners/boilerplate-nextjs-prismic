@@ -5,11 +5,7 @@
     "dev-static:linux": "npm run build:linux && http-server ./out",
     "dev-static:windows": "npm run build:windows && http-server ./out",
     "test": "jest --u --env=jsdom",
-    "lint": "next lint",
-    "build:linux": "next lint && next build && next export && npm run repair-index && mv out/_next out/assets && npm run post-move-assets",
-    "build:windows": "next lint && next build && next export && npm run repair-index && move out/_next out/assets && npm run post-move-assets",
-    "repair-index": "replace-in-files --string \"../../assets/_next/static\" --replacement \"./assets/_next/static\" out/index.html",
-    "post-move-assets": "node -r dotenv/config scripts/post-build-move-assets.js"
+    "lint": "next lint"
   },
   "dependencies": {
     "@go1d/go1d": "^7.7.1",
