@@ -1,0 +1,49 @@
+.carousel ul {
+  position: unset !important;
+  text-align-last: left;
+}
+
+.carousel > div {
+  display: flex;
+  flex-direction: column-reverse ;
+}
+
+.dot {
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: #E6E9EA;
+  display: inline-flex;
+  -webkit-transition: opacity 0.25s ease-in;
+  -moz-transition: opacity 0.25s ease-in;
+  -ms-transition: opacity 0.25s ease-in;
+  -o-transition: opacity 0.25s ease-in;
+  transition: opacity 0.25s ease-in;
+  margin-left: 4px;
+  margin-right: 4px;
+  cursor: pointer;
+}
+
+.dotSelected {
+  -webkit-transition: opacity 0.25s ease-in;
+  -moz-transition: opacity 0.25s ease-in;
+  -ms-transition: opacity 0.25s ease-in;
+  -o-transition: opacity 0.25s ease-in;
+  transition: opacity 0.25s ease-in;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  display: inline-flex;
+  background-color: #114954;
+  margin-left: 4px;
+  margin-right: 4px;
+  cursor: pointer;
+}
+
+.carouselTitle{
+  margin-bottom: 2rem;
+}
+
+.carouselTitle > div {
+  margin-bottom: 0;
+}
